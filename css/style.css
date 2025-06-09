@@ -3456,3 +3456,22 @@ div.modal-backdrop {
     font-size: 14px;
     margin-left: -50px;
 }
+
+.whatsapp-button a img.img-fluid {
+    position: relative;
+    max-width: 68px;
+}
+
+.whatsapp-button a span {
+    background: #40c351;
+    border-radius: 70px;
+    padding: 6px 20px 6px 35px;
+    line-height: normal;
+    font-size: 13px;
+    margin-left: -50px;
+    background: #40c351;
+    border-radius: 70px;
+    line-height: normal;
+    font-size: 14px;
+    margin-left: -40px;
+    font-family: "Rubik", sans-serif;
