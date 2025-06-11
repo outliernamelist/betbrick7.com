@@ -35,5 +35,4 @@ Disallow:/
 User-agent:meta-externalagent
 Disallow:/
 
-Sitemap: https://betbrick7.com/sitemap.xml
-Sitemap: https://betbrick7.com/images_sitemap.xml
+SiteMap: https://www.betbrick7.com/sitemap.xml
