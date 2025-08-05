@@ -1,5 +1,0 @@
-User-agent: *
-Allow: /
-Disallow: /
-
-SiteMap: https://www.betbrick7.com/sitemap.xml
