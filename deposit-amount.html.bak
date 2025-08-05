@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>AngleX</title>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">	
+	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css" />
+
+	
+</head>
+
+<body>
+
+<div class="page-wrappers no-empty-page deposit-amount-page">
+
+<div class="loader"><img src="images/loading.webp" /></div>
+
+<header class="header">
+	<div class="brdc">
+	<div class="back-btn"><a href="exchange.html"><img src="images/back-btn.png" /></a></div>
+	<h3>Deposit USDT</h3>
+	</div>
+	<div class="right d-flex">
+		<img src="images/gray-warn.png" />
+		<img src="images/undo.png" />
+	</div>
+</header>
+
+<div class="page-wrapper">	
+	<section class="section-1 text-center">	
+		<p class="title"><b>Scan the QR code and pay</b></p>
+		<div class="image"><img src="images/QR.jpg" class="icon" /></div>
+		<div class="rem-time">
+			<span class="num">0</span>
+			<span class="num">1</span> <span class="sep">:</span>
+			<span class="num">3</span>
+			<span class="num">4</span> <span class="sep">:</span>
+			<span class="num">2</span>
+			<span class="num">5</span> remaining
+		</div>
+		
+		<div id="counter">00:00:00</div>
+		<p><b>If have transaction fee, don't forget to add it. The transfer amount must match the deposit amount.</b></p>
+		
+		<div class="select-amt">
+			<input type="number" value="" placeholder="Please enter Txid" name="">
+			<div class="submit"><button class="button-style">Submit</button></div>
+		</div>
+		
+		<p style="text-align: left;padding-top:20px;opacity: .4;"><b>Your deposit USDT will be immediately to your wallet once enter Txid</b></p>
+		
+	</section>
+	<section class="section-2 inner-space">	
+		<div class="inside">
+		<div class="rw">
+		<p class="title">Deposit Amount</p>
+		<div class="amt"><img src="images/uic.png" class="icon"> <h3>50000</h3></div>
+		</div>
+		
+		<div class="rw">
+		<p class="title">Deposit Address</p>
+		<div class="address"> TgFt845DErl34jdf4545hsd34t845DErl34 <span class="copy"><img src="images/copy.png" class="icon"></span></div>
+		</div>
+		
+		<div class="warning" style="margin: 7px 0;">
+		<div class="inside">
+				<img src="images/warn.png" class="icon" /> 
+				A Only support <span class="red">TRC20-USDT</span>, Any losses caused by your improper operation will be borne by yourself. Please operate with caution and double-check the recharge address carefully
+		</div>
+		</div>
+		
+		<div class="rw">
+		<p class="title">Deposit ID</p>
+		<div class="address"> d34t845DErl34jdf4545h <span class="copy"><img src="images/copy.png" class="icon"></span></div>
+		</div>
+		
+		<div class="rw">
+		<p class="title">Network</p>
+		<div class="amt no-weight"> <img src="images/tb-ic1.png" class="icon"> USDT-TRC30 </div>
+		</div>
+		
+		<div class="rw">
+		<p class="title">Create Time</p>
+		<div class="amt no-weight"> 30 July 2025 13:45:02 </div>
+		</div>
+		
+		<div class="rw">
+		<p class="title">Remark</p>		
+		</div>
+		
+		<div class="rw nobrd anc">
+		<p class="title"><a href="#"><b>.</b> TRC30-USDT only</a></p>		
+		</div>
+		
+	</section>
+	
+	
+	
+	
+</div>
+
+	<footer class="footer footer-op1">
+		<div class="bx">
+		<button class="button-style"> Cancel</button>
+		</div>
+	</footer>
+
+
+</div>
+</div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+<script>
+	$(document).ready(function() {
+		setTimeout(() => {
+			$('.loader').hide();
+		},"400");
+	})
+	
+	
+	let tabbtn = document.querySelectorAll('.select-tbs .tb input[type="radio"]');
+	tabbtn.forEach((tab) => {
+		tab.addEventListener('click', () => {
+			tabbtn.forEach((btn) => btn.parentElement.classList.remove('active'));
+			tab.parentElement.classList.add('active');
+		});
+	});
+	
+	
+	/*let seconds = 0;
+
+  function formatTime(num) {
+    return num < 10 ? '0' + num : num;
+  }
+
+  function updateCounter() {
+    seconds++;
+
+    const hrs = Math.floor(seconds / 3600);
+    const mins = Math.floor((seconds % 3600) / 60);
+    const secs = seconds % 60;
+
+    document.getElementById('counter').innerHTML = `<div class="rem-time"><span class='num'>${formatTime(hrs)}</span><span class='sep'>:</span><span class='num'>${formatTime(mins)}</span><span class='sep'>:</span><span class='num'>${formatTime(secs)}</span>  remaining</div>`;
+  }
+
+  // Start the counter
+  setInterval(updateCounter, 1000);
+									*/
+	
+									  
+	 
+	
+</script>
+
+
+
+</body>
+</html>		

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>AngleX</title>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">	
+	<link rel="stylesheet" href="css/style.css" />
+
+	
+</head>
+
+<body>
+
+<div class="page-wrappers no-empty-page deposit-amount-page add-bank-page">
+
+<div class="loader"><img src="images/loading.webp" /></div>
+
+<header class="header">
+	<div class="brdc">
+	<div class="back-btn"><a href="exchange.html"><img src="images/back-btn.png" /></a></div>
+	<h3>Exchange</h3>
+	</div>
+	<div class="right">
+		<img src="images/undo.png" />
+	</div>
+</header>
+
+<div class="page-wrapper page-wrapper-ex ">	
+	<section class="section-1 text-center">	
+		<div class="dflex border-btm">
+		<p class="title"><b>Select payee</b></p>
+		<div class="image"><img src="images/add-u-icon.png" class="icon" /></div>
+		</div>
+		<div class="add-bank">
+			<a href="bind-bank-card.html" class="button-style"><img src="images/addicon.png" class="icon" /> Add bank account</button>
+		</div>
+		
+	</section>
+	<section class="section-2 inner-space">	
+		<div class="inside">
+
+		
+		<div class="btm">
+		<p class="title">Sell amount</p>
+		<div class="select-amt">
+			<input type="number" placeholder="Please enter the amount" name="" />
+			<div class="amt"><img src="images/uic.png" class="icon" /> USDT</div>
+		</div>
+		</div>
+		
+		<div class="dflex avail">
+		<p class="title clrgren">Available($) 0 <img src="images/uic.png" class="icon" style="max-width: 15px;" /> </p>
+		<p>1USDT=₹96</p>
+		</div>
+		
+		<div class="pricerefBx">
+			<table width="100%">
+				
+					<tr>
+						<td>&gt;=$1041 and &lt;$2000</td>
+						<td>₹99+ <span class="red">0.50</span></td>
+					</tr>
+					<tr>
+						<td>&gt;=$1041 and &lt;$2000</td>
+						<td>₹99+ <span class="red">0.50</span></td>
+					</tr>
+					<tr>
+						<td>&gt;=$1041 and &lt;$2000</td>
+						<td>₹99+ <span class="red">0.50</span></td>
+					</tr>
+					<tr>
+						<td>&gt;=$5.1041</td>
+						<td>₹99+ <span class="red">0.50</span></td>
+					</tr>				  			
+			</table>
+		</div>
+		
+		
+		</div>
+	</section>
+	
+	<div class="warning inner-space">
+		<div class="login-bx">
+			<a href="login.html" class="login-btn">Confirm</a>			
+		</div>
+		<div class="inside">
+			In order to get your funds back better, faster and more conveniently, your exchange order may be split into multiple parts
+		</div>
+	</div>
+	
+	
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+<script>
+	$(document).ready(function() {
+		setTimeout(() => {
+			$('.loader').hide();
+		},"400");
+	})
+	
+	
+	let tabbtn = document.querySelectorAll('.select-tbs .tb input[type="radio"]');
+	tabbtn.forEach((tab) => {
+		tab.addEventListener('click', () => {
+			tabbtn.forEach((btn) => btn.parentElement.classList.remove('active'));
+			tab.parentElement.classList.add('active');
+		});
+	});
+	
+	
+									  
+	 
+	
+</script>
+
+
+
+</body>
+</html>		
