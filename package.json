@@ -1,0 +1,22 @@
+{
+  "name": "angelx",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "20": "^1.0.0",
+    "again": "^0.0.1",
+    "jquery": "^3.7.1",
+    "next": "15.4.5",
+    "owl.carousel": "^2.3.4",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "react-slick": "^0.31.0",
+    "slick-carousel": "^1.8.1"
+  }
+}
